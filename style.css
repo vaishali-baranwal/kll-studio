@@ -95,7 +95,8 @@ body
 	}
 	.logo {
 		height: 100px;
-		padding-bottom: 10px;
+		padding-bottom: 5px;
+		margin-bottom: 10px;
 	}
 	.search-box
 	{
