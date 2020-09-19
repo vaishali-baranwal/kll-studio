@@ -10,19 +10,18 @@ body
 } 
 .top-nav-bar
 {
-	height: 57px;
+	height: 80px;
 	top: 0;
 	position: sticky;
 	background: #000;
 	margin-bottom: 20px;
-	border-bottom: 3px solid #111;
+	border-bottom: 3px solid #d8b55c;
 	z-index: 2;
 }
 .logo
 {
- 	height: 40px;
- 	margin: 5px 10px;
- 	padding-top: 5px;
+ 	height: 60px;
+ 	margin: 10px 20px;
 }
 .form-control
 {
@@ -93,6 +92,9 @@ body
 	{
 		height: 118px;
 		border-bottom: 0;
+	}
+	.logo {
+		height: 120px;
 	}
 	.search-box
 	{
