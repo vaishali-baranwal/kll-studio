@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>KLL Studio</title>
+        <link rel="icon" href="images/favicon.png" type="image/x-icon">
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script type="text/javascript">
+   			function openmenu() {
+   				document.getElementById("side-menu").style.display="block";
+   				document.getElementById("menu-btn").style.display="none";
+   				document.getElementById("close-btn").style.display="block";
+   			}
+   			function closemenu() {
+   				document.getElementById("side-menu").style.display="none";
+   				document.getElementById("menu-btn").style.display="block";
+   				document.getElementById("close-btn").style.display="none ";
+   			}
+   		</script>
+    </head>
+    <body>
+        <div class="top-nav-bar">
+            <div class="search-box">
+                <i class="fa fa-bars" id="menu-btn" onclick="openmenu()"></i>
+                <i class="fa fa-times" id="close-btn" onclick="closemenu()"></i>
+                <a href="index.html"><img src="images/KLL_studio_Logo.png" class="logo" /></a>
+                <input type="text" class="form-control" />
+                <span class="input-group-text">
+                    <i class="fa fa-search"></i>
+                </span>
+            </div>
+            <div class="menu-bar">
+                <ul>
+                    <li>
+                        <a href="#" aria-label="shopping cart">
+                            <i class="fa fa-shopping-cart" title="Shopping Cart"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">Sign Up</a>
+                    </li>
+                    <li>
+                        <a href="#">Log In</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+<!----------------Single Product------------------->
+        <section class="single-product">
+            <div class="container">
+               <div class="row">
+                   <div class="col-md-5">
+                       <div id="product-slider" class="carousel slide carousel-fade" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="images/product011.jpg" class="d-block w-100"/>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/product012.jpg" class="d-block w-100"/>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/product013.jpg" class="d-block w-100"/>
+                                </div>
+                                <a class="carousel-control-prev" href="#product-slider" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                                </a>
+                                    <a class="carousel-control-next" href="#product-slider" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                                </a>
+                            </div>    
+                        </div>
+                    </div>
+					<div class="col-md-7">
+						<p class="new-arrival text-center">NEW</p>
+						<h2>Women's Party Wear Evening Gown with Jacket</h2>
+						<p>Product Code: ABCD2020</p>
+
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star-half-o"></i>
+                        <p class="price">Rs. 4700</p>
+                        <p><b>Availability:</b> In Stock</p>
+                        <p><b>Condition:</b> New</p>
+                        <p><b>Brand:</b> XYZ Company</p>
+                        <div class="sel-size">
+							<span><b>Select Size</b></span>
+							<div>
+								<label class="size-select">
+									<input type="radio" name="r1">
+									<span class="checkmark">S</span>
+								</label>
+								<label class="size-select">
+									<input type="radio" name="r1">
+									<span class="checkmark">M</span>
+								</label>
+								<label class="size-select">
+									<input type="radio" name="r1">
+									<span class="checkmark">L</span>
+								</label>
+								<label class="size-select">
+									<input type="radio" name="r1">
+									<span class="checkmark">XL</span>
+								</label>
+							</div>
+						</div>
+                        <button type="button" class="btn btn-primary">Add to Cart</button>
+                        <button type="button" class="btn btn-primary">Buy Now</button>
+                    </div>
+                </div> 
+            </div> 
+        </section> 
+
+<!-----------------product-description---------------->
+        <section class="product-description">
+            <div class="container">
+                <h6>Product Description</h6>
+                <p>Subscribe us to get latest updates on fashion trends and press the bell button to get immediate notifications.</p>
+                <hr>
+            </div>
+            <div class="container">
+                <div class="title-box">
+                    <h2>Similar</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="product-top">
+                        	<a href="product02.html" target="_blank">
+                                <img src="images/product021.jpg">
+                            </a>
+                            <div class="overlay-right"> 
+                                <button type="button" class="btn btn-secondary" title="Quick Shop">
+                                <i class="fa fa-eye"></i>
+                                </button>
+                                <button type="button" class="btn btn-secondary" title="Add to Wishlist">
+                                <i class="fa fa-heart-o"></i>
+                                </button>
+                                <button type="button" class="btn btn-secondary" title="Add to Cart">
+                                <i class="fa fa-shopping-cart"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-bottom text-center">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                            <h6>Women's Party Wear A-line Dress</h6>
+                            <h5>Rs.5200</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="product-top">
+                        	<a href="product03.html" target="_blank">
+                                <img src="images/product031.jpg">
+                            </a>
+                            <div class="overlay-right"> 
+                                <button type="button" class="btn btn-secondary" title="Quick Shop">
+                                <i class="fa fa-eye"></i>
+                                </button>
+                                <button type="button" class="btn btn-secondary" title="Add to Wishlist">
+                                <i class="fa fa-heart-o"></i>
+                                </button>
+                                <button type="button" class="btn btn-secondary" title="Add to Cart">
+                                <i class="fa fa-shopping-cart"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-bottom text-center">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                            <h6>Yellow Art Silk Flared Skirt With Pink Kurti</h6>
+                            <h5>Rs.4550</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="product-top">
+                        	<a href="product04.html" target="_blank">
+                                <img src="images/product041.jpg">
+                            </a>
+                            <div class="overlay-right"> 
+                                <button type="button" class="btn btn-secondary" title="Quick Shop">
+                                    <i class="fa fa-eye"></i>
+                                </button>
+                                <button type="button" class="btn btn-secondary" title="Add to Wishlist">
+                                    <i class="fa fa-heart-o"></i>
+                                </button>
+                                <button type="button" class="btn btn-secondary" title="Add to Cart">
+                                    <i class="fa fa-shopping-cart"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-bottom text-center">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                            <h6>Kashmiri Work Semi-Stiched Dress Material</h6>
+                            <h5>Rs.3899</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="product-top">
+                        	<a href="product08.html" target="_blank">
+                                <img src="images/product081.jpg">
+                            </a>
+                            <div class="overlay-right"> 
+                                <button type="button" class="btn btn-secondary" title="Quick Shop">
+                                    <i class="fa fa-eye"></i>
+                                </button>
+                                <button type="button" class="btn btn-secondary" title="Add to Wishlist">
+                                    <i class="fa fa-heart-o"></i>
+                                </button>
+                                <button type="button" class="btn btn-secondary" title="Add to Cart">
+                                    <i class="fa fa-shopping-cart"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-bottom text-center">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                            <h6>Women's Party Wear Palazzo Set with Jacket</h6>
+                            <h5>Rs.2800</h5>
+                        </div>
+                    </div>  
+                </div>      
+            </div>
+        </section>
+<!-----------------footer-------------------------->
+        <section class="footer">
+            <div class="container tex-center">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h1>Useful Links</h1>
+                        <p>Privacy Policy</p>
+                        <p>Terms of Use</p>
+                        <p>Return Policy</p>
+                        <p>Discount Coupons</p>
+                    </div>
+                    <div class="col-md-3">
+                        <h1>Company</h1>
+                        <p>About Us</p>
+                        <p>Contant Us</p>
+                        <p>Career</p>
+                        <p>Affiliate</p>
+                    </div>
+                    <div class="col-md-3">
+                        <h1>Follow Us On </h1>
+                        <p><i class="fa fa-facebook-official"></i>Facebook</p>
+                        <p><i class="fa fa-youtube-play"></i>You Tube</p>
+                        <p><i class="fa fa-linkedin"></i>Linkedin</p>
+                        <p><i class="fa fa-twitter"></i>Twitter</p>
+                    </div>
+                </div>
+                <hr>
+                <p class="copyright">Brought to you <i class="fa fa-heart-o"></i> by KLL</p>
+            </div>
+        </section>
+    </body>
+</html>
