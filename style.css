@@ -10,19 +10,18 @@ body
 } 
 .top-nav-bar
 {
-	height: 57px;
+	height: 80px;
 	top: 0;
 	position: sticky;
 	background: #000;
 	margin-bottom: 20px;
-	border-bottom: 3px solid #111;
+	border-bottom: 3px solid #d8b55c;
 	z-index: 2;
 }
 .logo
 {
- 	height: 40px;
- 	margin: 5px 10px;
- 	padding-top: 5px;
+ 	height: 60px;
+ 	margin: 10px 5px;
 }
 .form-control
 {
@@ -94,6 +93,11 @@ body
 		height: 118px;
 		border-bottom: 0;
 	}
+	.logo {
+		height: 100px;
+		padding-top: 5px;
+		padding-bottom: 0px;
+	}
 	.search-box
 	{
 		width: 100%;
@@ -161,12 +165,27 @@ body
 	margin-right: 8px;
 	float: right;
 }
-#menu-btn, #close-btn
+#menu-btn
 {
-	font-size: 30px;
-	margin: : 10px;
+	font-size: 40px;
 	color: #d8b55c;
+	margin-top: 20px;
+	margin-left: 20px;
+	display: block;
+}
+#close-btn
+{
+	font-size: 40px;
+	color: #d8b55c;
+	margin-top: 20px;
+	margin-left: 20px;
 	display: none;
+}
+#menu-btn::before, #close-btn::before
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	border: 1px solid #d8b55c;
 }
 @media only screen and (max-width: 980px)
 {
@@ -187,10 +206,6 @@ body
 	.side-menu ul li:hover ul
 	{
 		margin-left: 30%;
-	}
-	#menu-btn
-	{
-		display: block;
 	}
 }
 .slider
@@ -488,3 +503,21 @@ body
 .size-select input:checked ~ .checkmark {
 	background-color: #d8b55c;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
