@@ -10,18 +10,19 @@ body
 } 
 .top-nav-bar
 {
-	height: 80px;
+	height: 57px;
 	top: 0;
 	position: sticky;
 	background: #000;
 	margin-bottom: 20px;
-	border-bottom: 3px solid #d8b55c;
+	border-bottom: 3px solid #111;
 	z-index: 2;
 }
 .logo
 {
- 	height: 60px;
- 	margin: 10px 20px;
+ 	height: 40px;
+ 	margin: 5px 10px;
+ 	padding-top: 5px;
 }
 .form-control
 {
@@ -92,11 +93,6 @@ body
 	{
 		height: 118px;
 		border-bottom: 0;
-	}
-	.logo {
-		height: 100px;
-		padding-top: 5px;
-		padding-bottom: 0px;
 	}
 	.search-box
 	{
@@ -492,21 +488,3 @@ body
 .size-select input:checked ~ .checkmark {
 	background-color: #d8b55c;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
