@@ -19,6 +19,17 @@
    				document.getElementById("menu-btn").style.display="block";
    				document.getElementById("close-btn").style.display="none ";
    			}
+   			function showhidesearchbox() {
+   				dl=document.getElementById("expanded-search-box-div").classList;
+   				if (dl.contains("expanded-search-box-hide")) {
+   					dl.remove("expanded-search-box-hide");
+   					dl.add("expanded-search-box-show");
+   					document.getElementById("expanded-search-input").focus();
+   				} else {
+   					dl.remove("expanded-search-box-show");
+   					dl.add("expanded-search-box-hide");
+   				}
+   			}
    		</script>
     </head>
     <body>
@@ -32,10 +43,13 @@
                     <i class="fa fa-search"></i>
                 </span>
             </div>
+            <div class="expanded-search-box expanded-search-box-hide" id="expanded-search-box-div">
+                <input type="text" id="expanded-search-input" class="expanded-search" onfocusout="showhidesearchbox();" />
+            </div>
             <div class="menu-bar">
                 <ul>
                     <li class="search-li">
-                        <a href="#" aria-label="search">
+                        <a href="#" aria-label="search" onclick="showhidesearchbox();">
                             <i class="fa fa-search fa-lg fa-fw" title="Search"></i><span><br>Search</span>
                         </a>
                     </li>
