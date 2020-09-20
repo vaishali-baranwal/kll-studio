@@ -25,7 +25,8 @@ body
 .form-control
 {
  	margin-top: 18px;
- 	margin-left: 30px;
+ 	margin-left: 80px;
+ 	height: 43px !important;
  	border: 1px solid #111 !important;
  	border-top-left-radius: 20px  !important;
  	border-bottom-left-radius: 20px  !important;
@@ -47,7 +48,7 @@ body
 .search-box
 {
 	display: inline-flex;
-	width: 60%;
+	width: 80%;
 }
 .fa-search
 {
@@ -55,9 +56,10 @@ body
 }
 .menu-bar
 {
-	width: 40%;
-	height: 57px;
+	width: 15%;
+	height: 60px;
 	float: right;
+	margin-right: 20px;
 }
 .menu-bar ul
 {
@@ -78,9 +80,9 @@ body
 	color: #d8b55c;
 	text-decoration: none;
 }
-.fa-shopping-cart
+.search-li
 {
-	color: #d8b55c;
+	display: none;
 }
 @media only screen and (max-width: 980px)
 {
@@ -93,22 +95,30 @@ body
 		height: 100px;
 		padding-top: 5px;
 	}
-	.search-box
-	{
-		width: 100%;
+	.menu-bar {
+		height: 100px;
+		padding-right: 0px;
 	}
-	.menu-bar
-	{
-		width: 100%;
+	.menu-bar ul li {
+		margin-top: 16px;
 	}
-	.menu-bar ul
+	.menu-bar ul li a
 	{
-		width: 100%;
+		font-size: 18px;
 	}
-	.menu-bar ul li
+	.form-control {
+		display: none !important;
+	}
+	.input-group-text {
+		display: none !important;
+	}	
+	.fa-search
 	{
-		height: 118px;
-		width: 100%;
+		color: #d8b55c;
+	}
+	.search-li
+	{
+		display: block;
 	}
 }
 
