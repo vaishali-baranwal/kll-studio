@@ -14,7 +14,6 @@ body
 	top: 0;
 	position: sticky;
 	background: #000;
-	margin-bottom: 20px;
 	border-bottom: 3px solid #d8b55c;
 	z-index: 2;
 }
@@ -25,7 +24,7 @@ body
 }
 .form-control
 {
- 	margin-top: 9px;
+ 	margin-top: 18px;
  	margin-left: 30px;
  	border: 1px solid #111 !important;
  	border-top-left-radius: 20px  !important;
@@ -38,7 +37,7 @@ body
 {
    background-color: palegreen;
    border: 1px solid #111 !important;
-   margin: 8.5px 10px 3px 0 !important;
+   margin: 18px 10px 19px 0 !important;
    border-top-left-radius: 0px !important;
    border-bottom-left-radius: 0px !important;
    border-top-right-radius: 20px !important;
@@ -67,36 +66,32 @@ body
 }
 .menu-bar ul li
 {
-	border-left: 1px solid #fff;
 	list-style-type: none;
-	padding: 15px 35px;
+	padding: 15px 15px;
 	text-align: center;
-	background-color: #d8b55c;
 	cursor: pointer;
 }
 .menu-bar ul li a
 {
 	font-size: 16px;
 	font-weight: bold;
-	color: #000;
+	color: #d8b55c;
 	text-decoration: none;
 }
 .fa-shopping-cart
 {
-	margin-right: 5px;
-	color: #000;
+	color: #d8b55c;
 }
 @media only screen and (max-width: 980px)
 {
 	.top-nav-bar
 	{
 		height: 118px;
-		border-bottom: 0;
+		border-bottom: 3px solid #d8b55c;
 	}
 	.logo {
 		height: 100px;
 		padding-top: 5px;
-		padding-bottom: 0px;
 	}
 	.search-box
 	{
@@ -108,12 +103,11 @@ body
 	}
 	.menu-bar ul
 	{
-		margin: 10px 0;
 		width: 100%;
 	}
 	.menu-bar ul li
 	{
-		height: 57px;
+		height: 118px;
 		width: 100%;
 	}
 }
@@ -189,6 +183,10 @@ body
 }
 @media only screen and (max-width: 980px)
 {
+	#menu-btn, #close-btn
+	{
+		padding-top: 20px;
+	}
 	.side-menu
 	{
 		width: 32%;
@@ -503,21 +501,3 @@ body
 .size-select input:checked ~ .checkmark {
 	background-color: #d8b55c;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
