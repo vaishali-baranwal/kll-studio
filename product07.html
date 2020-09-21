@@ -19,6 +19,17 @@
    				document.getElementById("menu-btn").style.display="block";
    				document.getElementById("close-btn").style.display="none ";
    			}
+            function showhidesearchbox() {
+                dl=document.getElementById("expanded-search-box-div").classList;
+                if (dl.contains("expanded-search-box-hide")) {
+                    dl.remove("expanded-search-box-hide");
+                    dl.add("expanded-search-box-show");
+                    document.getElementById("expanded-search-input").focus();
+                } else {
+                    dl.remove("expanded-search-box-show");
+                    dl.add("expanded-search-box-hide");
+                }
+            }
    		</script>
     </head>
     <body>
@@ -26,24 +37,31 @@
             <div class="search-box">
                 <i class="fa fa-bars" id="menu-btn" onclick="openmenu()"></i>
                 <i class="fa fa-times" id="close-btn" onclick="closemenu()"></i>
-                <a href="index.html"><img src="images/kll_studio_logo.png" class="logo" /></a>
+                <a href="index.html"><img src="images/KLL_studio_Logo.png" class="logo" /></a>
                 <input type="text" class="form-control" />
                 <span class="input-group-text">
                     <i class="fa fa-search"></i>
                 </span>
             </div>
+            <div class="expanded-search-box expanded-search-box-hide" id="expanded-search-box-div">
+                <input type="text" id="expanded-search-input" class="expanded-search" onfocusout="showhidesearchbox();" />
+            </div>
             <div class="menu-bar">
                 <ul>
-                    <li>
-                        <a href="#" aria-label="shopping cart">
-                            <i class="fa fa-shopping-cart" title="Shopping Cart"></i>
+                    <li class="search-li">
+                        <a href="#" aria-label="search" onclick="showhidesearchbox();">
+                            <i class="fa fa-search fa-lg fa-fw" title="Search"></i><span><br>Search</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#">Sign Up</a>
+                        <a href="#" aria-label="shopping cart">
+                            <i class="fa fa-shopping-cart fa-lg fa-fw" title="Shopping Cart"></i><span><br>Cart</span>
+                        </a>
                     </li>
                     <li>
-                        <a href="#">Log In</a>
+                        <a href="#" aria-label="User Profile">
+                            <i class="fa fa-user fa-fw  fa-lg" title ="Profile"></i><span><br>Profile</span>
+                        </a>
                     </li>
                 </ul>
             </div>
