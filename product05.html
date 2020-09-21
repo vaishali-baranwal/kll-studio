@@ -8,48 +8,25 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-        <script type="text/javascript">
-   			function openmenu() {
-   				document.getElementById("side-menu").style.display="block";
-   				document.getElementById("menu-btn").style.display="none";
-   				document.getElementById("close-btn").style.display="block";
-   			}
-   			function closemenu() {
-   				document.getElementById("side-menu").style.display="none";
-   				document.getElementById("menu-btn").style.display="block";
-   				document.getElementById("close-btn").style.display="none ";
-   			}
-            function showhidesearchbox() {
-                dl=document.getElementById("expanded-search-box-div").classList;
-                if (dl.contains("expanded-search-box-hide")) {
-                    dl.remove("expanded-search-box-hide");
-                    dl.add("expanded-search-box-show");
-                    document.getElementById("expanded-search-input").focus();
-                } else {
-                    dl.remove("expanded-search-box-show");
-                    dl.add("expanded-search-box-hide");
-                }
-            }
-   		</script>
+        <script src="scripts.js"></script>
     </head>
-    <body>
+    <body onload="setupPage();">
         <div class="top-nav-bar">
             <div class="search-box">
                 <i class="fa fa-bars" id="menu-btn" onclick="openmenu()"></i>
                 <i class="fa fa-times" id="close-btn" onclick="closemenu()"></i>
                 <a href="index.html"><img src="images/KLL_studio_Logo.png" class="logo" /></a>
-                <input type="text" class="form-control" />
-                <span class="input-group-text">
-                    <i class="fa fa-search"></i>
-                </span>
-            </div>
-            <div class="expanded-search-box expanded-search-box-hide" id="expanded-search-box-div">
-                <input type="text" id="expanded-search-input" class="expanded-search" onfocusout="showhidesearchbox();" />
+                <div class="dynamic-search-box" id="dynamic-search-box-div">
+                    <input type="text" class="form-control" id="form-control-text" onfocusout="hidesearchbox();" />
+                    <span class="input-group-text">
+                        <i class="fa fa-search"></i>
+                    </span>
+                </div>
             </div>
             <div class="menu-bar">
                 <ul>
                     <li class="search-li">
-                        <a href="#" aria-label="search" onclick="showhidesearchbox();">
+                        <a href="#" aria-label="search" onclick="showsearchbox();">
                             <i class="fa fa-search fa-lg fa-fw" title="Search"></i><span><br>Search</span>
                         </a>
                     </li>
