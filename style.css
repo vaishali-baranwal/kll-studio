@@ -50,6 +50,27 @@ body
 	display: inline-flex;
 	width: 80%;
 }
+.expanded-search-box {
+	z-index: 4;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 7px 0px 10px 0px;
+	height: 118px;
+}
+.expanded-search-box-hide
+{
+	width: 0%;
+	display: none;
+}
+.expanded-search
+{
+	height: 100px !important;
+	width: 100%;
+	padding-left: 15px;
+	font-size: 40px !important;
+	border: double 2px #d8b55c !important;
+}
 .fa-search
 {
 	color: #000;
@@ -91,6 +112,9 @@ body
 		height: 118px;
 		border-bottom: 3px solid #d8b55c;
 	}
+	.search-box {
+		width: 70%;
+	}
 	.logo {
 		height: 100px;
 		padding-top: 5px;
@@ -119,6 +143,27 @@ body
 	.search-li
 	{
 		display: block;
+	}
+	.expanded-search-box-show {
+		width: 70%;
+		display: inline-flex;
+		animation-name: expanded-search-box-show-frame;
+        animation-duration: .5s;
+	}
+	.expanded-search-box-hide {
+		width: 0%;
+		display: none;
+		animation-name: expanded-search-box-hide-frame;
+        animation-duration: .5s;
+	}
+	@keyframes expanded-search-box-show-frame {
+	    from {width: 0%; display: none;}
+	    to {width: 70%; display: inline-flex;}
+	}
+
+	@keyframes expanded-search-box-hide-frame {
+	    from {width: 70%; display: inline-flex;}
+	    to {width: 0%; display: none;}
 	}
 }
 
