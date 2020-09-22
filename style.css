@@ -179,6 +179,7 @@ body
 	}
 	.search-li
 	{
+		margin-right: 5px;
 		display: block;
 	}
 	@keyframes dynamic-search-box-show-frame {
