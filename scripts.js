@@ -36,5 +36,13 @@ function setupSearch() {
    });
 }
 function setupPage() {
-setupSearch();
+	setupSearch();
+	$(document).click(function(e) {
+		var tgt = $(e.target);
+        if (tgt.is('#side-menu') || tgt.is('#menu-btn') || tgt.is('#close-btn')) {
+            return;
+        } else {
+            closemenu();
+        }
+    });
 }
