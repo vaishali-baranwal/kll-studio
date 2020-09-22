@@ -22,17 +22,22 @@ body
  	height: 60px;
  	margin: 10px 5px;
 }
+.dynamic-search-box
+{
+	display: inline-flex;
+	width: 100%;
+}
 .form-control
 {
  	margin-top: 18px;
  	margin-left: 80px;
  	height: 43px !important;
  	border: 1px solid #111 !important;
- 	border-top-left-radius: 20px  !important;
- 	border-bottom-left-radius: 20px  !important;
+ 	border-top-left-radius: 20px !important;
+ 	border-bottom-left-radius: 20px !important;
  	border-top-right-radius: 0  !important;
- 	border-bottom-right-radius: 0  !important;
- 	box-shadow: none  !important  ;
+ 	border-bottom-right-radius: 0 !important;
+ 	box-shadow: none  !important;
 }
 .input-group-text
 {
@@ -119,8 +124,26 @@ body
 		height: 100px;
 		padding-top: 5px;
 	}
+	.dynamic-search-box
+	{
+		z-index: 4;
+		position: absolute;
+		top: 0;
+		left: 0;
+		padding: 7px 0px 10px 0px;
+		height: 118px;
+		width: 0%;
+		animation-name: dynamic-search-box-hide-frame;
+		animation-duration: .2s;
+	}
+	.dynamic-search-box-show {
+		width: 81%;
+		animation-name: dynamic-search-box-show-frame;
+		animation-duration: .5s;
+	}
 	.menu-bar {
 		height: 100px;
+		width: 27%;
 		padding-right: 0px;
 	}
 	.menu-bar ul li {
@@ -131,7 +154,21 @@ body
 		font-size: 18px;
 	}
 	.form-control {
-		display: none !important;
+	 	margin-top: 0px;
+	 	margin-left: 0px;
+	 	height: 100px !important;
+		width: 100% !important;
+		font-size: 40px !important;
+		padding: 0px 0px 0px 0px !important;
+		border: double 0px #d8b55c !important;
+	 	border-top-left-radius: 0px !important;
+	 	border-bottom-left-radius: 0px !important;
+	 	border-top-right-radius: 0px !important;
+	 	border-bottom-right-radius: 0px !important;
+	}
+	.form-control-show {
+		padding: 0px 0px 0px 15px !important;
+		border: double 2px #d8b55c !important;
 	}
 	.input-group-text {
 		display: none !important;
@@ -142,28 +179,16 @@ body
 	}
 	.search-li
 	{
+		margin-right: 5px;
 		display: block;
 	}
-	.expanded-search-box-show {
-		width: 70%;
-		display: inline-flex;
-		animation-name: expanded-search-box-show-frame;
-        animation-duration: .5s;
-	}
-	.expanded-search-box-hide {
-		width: 0%;
-		display: none;
-		animation-name: expanded-search-box-hide-frame;
-        animation-duration: .5s;
-	}
-	@keyframes expanded-search-box-show-frame {
+	@keyframes dynamic-search-box-show-frame {
 	    from {width: 0%; display: none;}
-	    to {width: 70%; display: inline-flex;}
+	    to {width: 81%; display: inline-flex;}
 	}
-
-	@keyframes expanded-search-box-hide-frame {
-	    from {width: 70%; display: inline-flex;}
+	@keyframes dynamic-search-box-hide-frame {
 	    to {width: 0%; display: none;}
+	    from {width: 81%; display: inline-flex;}
 	}
 }
 
