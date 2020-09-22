@@ -134,12 +134,12 @@ body
 		height: 118px;
 		width: 0%;
 		animation-name: dynamic-search-box-hide-frame;
-        animation-duration: .2s;
+		animation-duration: .2s;
 	}
 	.dynamic-search-box-show {
 		width: 80%;
 		animation-name: dynamic-search-box-show-frame;
-        animation-duration: .5s;
+		animation-duration: .5s;
 	}
 	.menu-bar {
 		height: 100px;
