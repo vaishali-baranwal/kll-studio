@@ -270,21 +270,21 @@ body
 	}
 	.side-menu
 	{
-		width: 32%;
+		width: 20%;
 		z-index: 20;
-		top: 133px;
+		top: 118px;
 		position: fixed;
-		font-size: 14px;
+		font-size: 18px;
 		background: #f1f3f4;
 		display: none;
 	}
 	.side-menu ul li ul
 	{
-		top: 133px;
+		top: 118px;
 	}
 	.side-menu ul li:hover ul
 	{
-		margin-left: 30%;
+		margin-left: 18%;
 	}
 }
 .slider
