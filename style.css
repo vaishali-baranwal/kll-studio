@@ -137,12 +137,13 @@ body
         animation-duration: .2s;
 	}
 	.dynamic-search-box-show {
-		width: 81%;
+		width: 80%;
 		animation-name: dynamic-search-box-show-frame;
         animation-duration: .5s;
 	}
 	.menu-bar {
 		height: 100px;
+		width: 27%;
 		padding-right: 0px;
 	}
 	.menu-bar ul li {
@@ -182,11 +183,11 @@ body
 	}
 	@keyframes dynamic-search-box-show-frame {
 	    from {width: 0%; display: none;}
-	    to {width: 81%; display: inline-flex;}
+	    to {width: 80%; display: inline-flex;}
 	}
 	@keyframes dynamic-search-box-hide-frame {
 	    to {width: 0%; display: none;}
-	    from {width: 81%; display: inline-flex;}
+	    from {width: 80%; display: inline-flex;}
 	}
 }
 
