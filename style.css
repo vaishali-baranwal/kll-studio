@@ -195,12 +195,14 @@ body
 /*-----------side-menu-------------*/
 .side-menu
 {
-	height: 79%;
-	width: 15%;
+	width: 11%;
 	font-size: 14px;
 	float: left;
-	z-index: 2;
-	background-color: #ddd;
+	z-index: 6;
+	background-color: #f1f3f4;
+    top: 80px;
+	position: fixed;
+	display: none;
 }
 .side-menu ul
 {
@@ -221,17 +223,16 @@ body
 {
 	display: none;
 	z-index: 10;
-	top: 77px;
-}
-.side-menu ul li:hover ul
-{
-	display: block;
-	height: 400px;
-	margin-left: 14%;
+	top: 80px;
+	margin-left: 10%;
 	padding: 0 100px 10px 10px;
 	position: fixed;
 	background: #ececec;
 	box-shadow: 1px 1px 4px 1px rgba(0,0,0,0.5);
+}
+.side-menu ul li:hover ul
+{
+	display: block;
 }
 .fa-angle-right
 {
@@ -269,28 +270,26 @@ body
 	}
 	.side-menu
 	{
-		width: 32%;
+		width: 20%;
 		z-index: 20;
-		top: 133px;
+		top: 118px;
 		position: fixed;
-		font-size: 12px;
+		font-size: 18px;
 		background: #f1f3f4;
 		display: none;
 	}
 	.side-menu ul li ul
 	{
-		top: 133px;
+		top: 118px;
 	}
 	.side-menu ul li:hover ul
 	{
-		margin-left: 30%;
+		margin-left: 18%;
 	}
 }
 .slider
 {
-	width: 85%;
-	margin-left: 15%;
-	padding: 0 10px;
+	padding: 0 5px;
 }
 .carousel
 {
@@ -300,15 +299,6 @@ body
 {
 	z-index: 1 !important;
 }
-@media only screen and (max-width: 980px)
-{
-	.slider
-	{
-		width: 100%;
-		margin-left: 0;
-	}
-}
-
 /*-----------------------------*/
 
 .featured-catogeries
